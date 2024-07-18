@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Website </title>
+    <style>
+      
+      h1{
+        font-size: 40px;
+        font-family: arial, helvetica, serif;
+        color: rgb(100, 120, 120);
+        text-align: center
+      }
+      #banner{
+        width: 100%;
+        height: 360px;
+        object-fit: cover;
+      }
+      h2{
+        font-family:roboto, arial, helvetica, serif;
+        font-size: 32px;
+        color: rgb(100, 150, 150);
+        
+      }
+      #container{
+        max-width: 720px;
+        margin: 0 auto 0 auto;
+      }
+      #container2{
+        text-align: center;
+      }
+    </style>
+  </head>
+<div id = "container">
+<body bgcolor = 'black'>
+  <h1>Welcome to my website</h1><br>
+  <img id="banner" src= "https://aff5df97-92ee-4537-bec6-257ffc3f90ec-00-2j0dg3v20clbp.kirk.replit.dev/static/eeee.jpg"
+   height= "300" width = 1800>
+  <h2>Information</h2>
+  <p style = "color:white;">A cat sat quietly on the windowsill, basking in the warm sunlight. Outside, birds chirped merrily, and a gentle breeze rustled the leaves of a nearby tree. The aroma of freshly baked bread wafted through the air, filling the house with a comforting sense of home. Everything felt peaceful and serene.</p>
+  <h2>more information</h2>
+  <p style = "color:white;">Sunlight streamed through the window, casting golden hues on the wooden floor. The cat stretched lazily, basking in the warmth. Outside, birds chirped melodiously, their songs blending with the rustling leaves. A gentle breeze carried the scent of blooming flowers, filling the room with a sense of tranquility and peace.</p> <br>
+<h3 style = "color:white;">jobs available are</h3>
+{% for f in job %}
+  <p style = "color:white";font-family = 'roboto';>{{f['title']}}</p>
+  <p style = "color:white";font-family='roboto';>{{f['salary']}}</p><br>
+{% endfor %}
+  <div id = "container2">
+    <button>contact us</button>
+  </div>}
+</body>
+  </div>
+</html>
